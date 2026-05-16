@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="utf-8">
+<title>Capital vol.32 | ActiBook</title>
+
+    <script src="./assets/js/lib.js"></script>
+    <script src="./assets/js/device.min.js"></script>
+    <script src='assets/js/i18n.js'></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- page specific styles-->
+    <!-- inline styles and so on related to this page-->
+    <style type="text/css">
+        .book-detail-block__action {
+            display: none;
+        }
+        .book-detail--pc .book-detail-block__action-pc {
+            display: block;
+        }
+
+        .book-detail--sd.book-detail--tablet .book-detail-block__action-pad {
+            display: block;
+        }
+
+        .book-detail--pc .book-detail-block__action__extend__normal {
+            background: transparent;
+        }
+
+        .book-detail--pc .book-detail-block__action__extend__wrapper > a.action__extend_active {
+            background: rgba(0, 0, 0, .1);
+        }
+
+        .book-detail--sd .book-detail-block__viewer-dummy.book-detail-block__viewer-dummy--tablet:before {
+            padding-top: 0;
+        }
+
+        .fullScreen_extend.nav-afterlogin {
+            overflow: hidden;
+        }
+
+        .fullScreen_extend.nav-afterlogin .book-viewer{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100% !important;
+            width: 100%;
+            z-index: 9999;
+        }
+        .fullScreen_extend.nav-afterlogin .book-viewer .book-viewer-dummy{
+            height: 100% !important;
+        }
+
+        /* 水印 logo */
+        .book-detail-block__action__reacts__branding_box-pc {
+            display: flex;
+            align-items: center;
+        }
+
+        .book-detail-block__action__reacts__branding-pc{
+            margin-top: 10px;
+            display: inline-block;
+            width: 134px;
+            height: 24px!important;
+            background-image: url(./assets/images/actibook_logo_free_pc.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .book-detail-block__action__reacts__branding_box-pad {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+        }
+
+        .book-detail-block__action__reacts__branding-pad{
+            display: inline-block;
+            width: 134px;
+            height: 24px!important;
+            background-image: url(./assets/images/actibook_logo_free_sd.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .book-detail-block__action__reacts__branding__entity-pc{
+            display: flex;
+            align-items: center;
+            /* width: 134px; */
+            height: 43px!important;
+            padding-right: 15px;
+
+        }
+
+        .book-detail-block__action__reacts__branding__entity-pad{
+            display: inline-block;
+            width: 134px;
+            height: 24px!important;
+        }
+    </style>
+</head>
+<body class="book-detail nav-afterlogin">
+<div class="book-detail-block__action book-detail-block__action-pc">
+    <div class="book-detail-block__action__inner">
+
+
+
+        <div class="book-detail-block__action__reacts">
+            <a class="book-detail-block__action__reacts__branding__entity-pc" href="https://actibook.cloudcircus.jp/" target="_blank">
+                <!-- <div class="book-detail-block__action__reacts__branding_box-pc">-->
+                <div class="book-detail-block__action__reacts__branding-pc"></div>
+                <!-- </div>-->
+            </a>
+            <a class="book-detail-block__action__reacts__share waves-effect waves-light" href="#" data-action="share">
+                <div class="book-detail-block__action__reacts__share__icon"></div>
+                <div class="book-detail-block__action__reacts__share__title" data-text='pc__detail_block__share__title'></div></a>
+            <a class="book-detail-block__action__reacts__print waves-effect waves-light printDisplay" href="#" data-action="print">
+                <div class="book-detail-block__action__reacts__print__icon"></div>
+                <div class="book-detail-block__action__reacts__share__title" data-text='pc__detail_block__print__title' ></div></a>
+            <a class="book-detail-block__action__reacts__pdf waves-effect waves-light" target="_blank">
+                <div class="book-detail-block__action__reacts__pdf__icon"></div>
+                <div class="book-detail-block__action__reacts__pdf__title">PDF</div></a>
+        </div>
+        <div class="book-detail-block__action__extend">
+            <div class="book-detail-block__action__extend__wrapper"><a class="action__extend_active book-detail-block__action__extend__normal waves-effect" style="white-space: nowrap;" href="#" data-action="normal">
+                <div class="book-detail-block__action__extend__normal__icon"></div>
+                <div class="book-detail-block__action__extend__normal__text" data-text='pc__detail_block__normal__title'></div></a><a class="book-detail-block__action__extend__larger waves-effect" style="white-space: nowrap;" href="#" data-action="larger">
+                <div class="book-detail-block__action__extend__larger__icon"></div>
+                <div class="book-detail-block__action__extend__larger__text" data-text='pc__detail_block__larger__title'></div></a><a class="book-detail-block__action__extend__zoomin waves-effect" style="white-space: nowrap;" href="#" data-action="fullscreen">
+                <div class="book-detail-block__action__extend__zoomin__icon"></div>
+                <div class="book-detail-block__action__extend__zoomin__text" data-text='pc__detail_block__zoomin__title'></div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- pad -->
+<div class="book-detail-block__action book-detail-block__action-pad">
+    <div class="book-detail-block__action__inner">
+
+        <div class="book-detail-block__action__reacts"><a class="book-detail-block__action__reacts__share waves-effect waves-light" href="#" data-action="share">
+            <div class="book-detail-block__action__reacts__share__icon"></div>
+            <div class="book-detail-block__action__reacts__share__title">シェア</div></a></div>
+        <div class="book-detail-block__action__app-button"><a class="app-button waves-effect waves-light" href="#" data-action="openApp">
+            <div class="book-detail-block__action__app-button__icon"></div>
+            <div class="book-detail-block__action__app-button__title">Posteで開く</div></a></div>
+    </div>
+</div>
+<div class="book-detail-block__action__reacts__branding_box-pad">
+    <div class="book-detail-block__action__reacts__branding-pad">
+        <a class="book-detail-block__action__reacts__branding__entity-pad" href="https://actibook.cloudcircus.jp/" target="_blank"></a>
+    </div>
+</div>
+<main role="main">
+    <div class="main-inner clearfix">
+        <div class="main-content clearfix">
+            <div class="detail-texts">
+<div class="detail-texts__book-title">Capital vol.32</div>
+                <div class="detail-texts__explain">
+                </div>
+            </div>
+            <div class="environment-block">
+                <div class="environment-block__title"><span data-text="environment__title"></span>
+                    <div class="environment-block__openclose environment-block__openclose--closed" id="environment_openclose">
+                        <div class="environment-block__openclose__inner"></div>
+                    </div>
+                </div>
+                <div class="environment-block__body" id="environment_body" style="display: none;">
+                    <div class="environment-block__body__left">
+                        <div class="environment-block__body__left__body">
+                            <div class="environment-block__body__left__body__header01" data-text="environment_left_content__title_0"></div>
+                            <div class="environment-block__body__left__body__header02" data-text="environment_left_content__title_1"></div>
+                            <div class="environment-block__body__left__body__content">
+                                <ul class="browser-default">
+                                    <li data-text="environment_left_content__text_1"></li>
+                                    <li data-text="environment_left_content__text_5"></li>
+                                    <li data-text="environment_left_content__text_2"></li>
+                                    <li data-text="environment_left_content__text_3"></li>
+                                </ul><br> <span data-text="environment_left_content__other_1"></span>
+                            </div>
+                            <div data-text="environment_left_content__title_2" class="environment-block__body__left__body__header01"></div>
+                            <div data-text="environment_left_content__title_3" class="environment-block__body__left__body__header02"></div>
+                            <div class="environment-block__body__left__body__content">
+                                <span data-text="environment_left_content__text_4"></span>
+                                <br>
+                                <a href="https://itunes.apple.com/jp/app/poste/id1340030905?mt=8" target="_blank">App Store</a>
+                                <br>
+                                <a href="https://play.google.com/store/apps/details?id=com.startialab.poste" target="_blank">Google play</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-text="environment_right_content__text_1" class="environment-block__body__right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="gototop" id="gototop">
+    <div class="gototop__tip"><a id="gototop" href="#"><i class="xiconbasic-arrow-left"></i></a></div>
+</div>
+
+<script src="./assets/js/script.js"></script>
+<script src="./pc.js"></script>
+
+<div class="fullscreen-loader">
+    <div class="preloader-wrapper active big">
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/Base64.js"></script>
+<script src="./assets/js/i18n.js"></script>
+
+
+</body>
+</html>
