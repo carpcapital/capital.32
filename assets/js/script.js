@@ -1,0 +1,1 @@
+var _sdMedia="(max-width: 600px)";
