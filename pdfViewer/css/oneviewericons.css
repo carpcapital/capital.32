@@ -1,0 +1,159 @@
+@font-face {
+  src: url("fonts/one_viewer.eot?qowxxr");
+  src: url("fonts/one_viewer.eot?qowxxr#iefix") format("embedded-opentype"), 
+        url("fonts/one_viewer.ttf?qowxxr") format("truetype"), 
+        url("fonts/one_viewer.woff?qowxxr") format("woff"), 
+        url("fonts/one_viewer.svg?qowxxr#one_viewer") format("svg");
+  font-family: 'one_viewer';
+  font-style: normal;
+  font-weight: normal;
+}
+
+i.oneviewer {
+  speak: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'one_viewer' !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+}
+
+i.oneviewer-search:before {
+  /* 検索フォームのボタンアイコン */
+  content: '\e900';
+}
+
+i.oneviewer-last:before {
+  /* ページ移動：最後 */
+  content: '\e901';
+}
+
+i.oneviewer-next:before {
+  /* ページ移動：次へ */
+  content: '\e902';
+}
+
+i.oneviewer-prev:before {
+  /* ページ移動：前へ */
+  content: '\e903';
+}
+
+i.oneviewer-first:before {
+  /* ページ移動：先頭 */
+  content: '\e904';
+}
+
+i.oneviewer-share:before {
+  /* シェア（埋め込み時の右に表示されるものは viewer_right_～ を使用のこ と） */
+  content: '\e905';
+}
+
+i.oneviewer-viewer_right_app:before {
+  /* Poste アプリで開く */
+  content: '\e906';
+}
+
+i.oneviewer-minifier:before {
+  /* ズーム（縮小） */
+  content: '\e907';
+}
+
+i.oneviewer-magnifier:before {
+  /* ズーム（拡大） */
+  content: '\e908';
+}
+
+i.oneviewer-viewer_right_maximize:before {
+  /* 埋め込み時全画面 */
+  content: '\e909';
+}
+
+i.oneviewer-viewer_right_share:before {
+  /* 埋め込み時シェア */
+  content: '\e90a';
+}
+
+i.oneviewer-viewer_right_minimize:before {
+  /* 埋め込み時全画面解除 */
+  content: '\e90b';
+}
+
+i.oneviewer-printer:before {
+  /* 印刷（埋め込み時の右に表示されるものは viewer_right_～ を使用のこと） */
+  content: '\e90c';
+}
+
+i.oneviewer-enlargebar_sd_back:before {
+  /* SD 用拡大バー　戻る */
+  content: '\e90d';
+}
+
+i.oneviewer-menu:before {
+  /* ビューアメニュー */
+  content: '\e90e';
+}
+
+i.oneviewer-times-circle:before {
+  /* 検索時消去ボタン */
+  content: '\e90f';
+}
+
+i.oneviewer-viewer_right_printer:before {
+  /* 埋め込み時印刷 */
+  content: '\e912';
+}
+
+i.oneviewer-enlargebar_sd_larger:before {
+  /* SD 用拡大バー　拡大 */
+  content: '\e914';
+}
+
+i.oneviewer-enlargebar_sd_normal:before {
+  /* SD 用拡大バー　通常 */
+  content: '\e915';
+}
+
+i.oneviewer-enlargebar_pc_normal:before {
+  /* PC 用拡大バー　通常 */
+  content: '\e921';
+}
+
+i.oneviewer-enlargebar_pc_larger:before {
+  /* PC 用拡大バー　拡大 */
+  content: '\e920';
+}
+
+i.oneviewer-enlargebar_pc_maximize:before {
+  /* PC 用拡大バー　全画面 */
+  content: '\e922';
+}
+
+i.oneviewer-sd_menuclose:before {
+  /* SD 用ビューア　メニュー閉じる */
+  content: '\e910';
+}
+
+i.oneviewer-sd_search:before {
+  /* SD 用ビューア　検索 */
+  content: '\e911';
+}
+
+i.oneviewer-sd_share:before {
+  /* SD 用ビューア　シェア */
+  content: '\e913';
+}
+
+i.oneviewer-sd_thumbs:before {
+  /* SD 用ビューア　サムネイル */
+  content: '\e916';
+}
+
+i.oneviewer-sd_toc:before {
+  /* SD 用ビューア　目次 */
+  content: '\e917';
+}
